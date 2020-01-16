@@ -7,6 +7,25 @@ Details may be seen in presReloc.pdf.
 
 Dataset used: EuRoC Machine Lab 1, TUM frxyz1 and frxyz2
 
+Implement relocalisation of agent (camera) in real time.
+b. Produce camera pose and trajectory given query image of location 
+after 3D map has been generated using SLAM.
+c. Project is of three stages:
+	1. 3D map generation using SLAM
+	2. Creation of unique dictionary of visual words for given dataset.
+	3. Large scale image search using vocabulary tree.
+ 
+ 
+Implementation
+1. Stage 1 :- SLAM
+2. Stage 2 :- Visual Word Dictionary
+3. Stage 3 :- Image Search
+Details of Implementation
+
+Main objective is to create a relocalisation system which is as fast
+and efficient as possible, and able to be implemented in real time.
+
+
 Steps to Implement
  
 1. Calibrate camera and save parameters.
